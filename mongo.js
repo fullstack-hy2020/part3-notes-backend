@@ -26,6 +26,7 @@ const note = new Note({
   important: false,
 })
 
+// eslint-disable-next-line no-constant-condition
 if ( false ) {
   note.save().then(() => {
     console.log('note saved!')

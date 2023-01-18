@@ -3,3 +3,4 @@ fly.toml
 Dockerfile
 .dockerignore
 build/
+.env

@@ -91,7 +91,6 @@ app.put('/api/notes/:id', (request, response, next) => {
 })
 
 app.use(unknownEndpoint)
-// tämä tulee kaikkien muiden middlewarejen rekisteröinnin jälkeen!
 app.use(errorHandler)
 
 const PORT = process.env.PORT

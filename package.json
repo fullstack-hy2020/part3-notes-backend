@@ -9,7 +9,8 @@
     "build:ui": "rm -rf build && cd ../frontend/ && npm run build && cp -r build ../backend",
     "deploy": "fly deploy",
     "deploy:full": "npm run build:ui && npm run deploy",
-    "logs:prod": "fly logs"
+    "logs:prod": "fly logs",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "mongoose": "^6.8.4"
   },
   "devDependencies": {
+    "eslint": "^8.32.0",
     "nodemon": "^2.0.20"
   }
 }

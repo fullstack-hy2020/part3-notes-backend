@@ -11,7 +11,7 @@
     "deploy:full": "npm run build:ui && npm run deploy",
     "logs:prod": "fly logs",
     "lint": "eslint .",
-    "test": "jest --verbose"
+    "test": "jest --verbose --runInBand"
   },
   "author": "",
   "license": "ISC",
@@ -24,9 +24,11 @@
   "devDependencies": {
     "eslint": "^8.32.0",
     "jest": "^29.3.1",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.3"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "globalTeardown": "./test-teardown.js"
   }
 }

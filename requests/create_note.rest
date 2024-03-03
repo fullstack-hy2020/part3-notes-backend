@@ -3,6 +3,6 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2NWNiM2VhYTdhZWU1NzU4NDMxMDU1ODciLCJpYXQiOjE3MDc4NDAxOTF9.xzoRCFOAiLvF3fzcQTAxOskNSW2bxlqIu6NlazuQzJM
 
 {
-  "content": "Token auth rocks!",
+  "content": "Single page apps use token based auth",
   "important": false
 }
